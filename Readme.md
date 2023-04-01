@@ -1,4 +1,5 @@
 # Simple classification machine learning app. 
+Docker Hub Image is here - [Link text Here](https://hub.docker.com/r/joyceiphone/flask_docker)
 
 ## Functions. Start training - `POST /train`
 The endpoint is only accepting `POST` requests.
