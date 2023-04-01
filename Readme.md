@@ -1,5 +1,5 @@
 # Simple classification machine learning app. 
-Docker Hub Image is here - [Link text Here](https://hub.docker.com/r/joyceiphone/flask_docker)
+Docker Hub Image is here - [Docker Image](https://hub.docker.com/r/joyceiphone/flask_docker)
 
 ## Functions. Start training - `POST /train`
 The endpoint is only accepting `POST` requests.
@@ -8,6 +8,8 @@ When you hit the endpoint. The flask backend service will fetch the data from UC
 ## Functions. Fit the data by parsing the query params - `GET /get-result`
 The endpoint is only accepting `GET` requests.
 Returns a class of iris for the params parsed. In case of success, it responds with a `200` HTTP code and the text representation of iris flower class.
+
+You need to use the `POST` request first before sending the `GET` request.
 
 ### Example call
 
