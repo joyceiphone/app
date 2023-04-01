@@ -21,7 +21,7 @@ def train():
             pickle.dump(classifier, files)
         return Response('', status=200)
     except:
-        return Response(status=203)
+        return Response(status=201)
 
 @app.route('/get-result', methods=["GET"])
 def get_result():
@@ -38,7 +38,7 @@ def get_result():
             predictions = classifier.predict([[sepal_length,sepal_width,petal_length,petal_width]])
             return Response(response=predictions[0], status=200, mimetype='application/json')
     except:
-        return Response(response="", status=203, mimetype='application/json')
+        return Response(response="", status=201, mimetype='application/json')
 
 if __name__ == '__main__':
     app.run("0.0.0.0")
