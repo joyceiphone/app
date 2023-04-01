@@ -38,7 +38,7 @@ You can get a simple `GET` result by running `GET` request if you are running fa
 ```python
 In [1]: import requests
 
-In [2]: result =requests.get("http://localhost:5000/fallback?petal_length=1")
+In [2]: result =requests.get("http://localhost:5000/get-result?petal_length=1")
 
 In [3]: result.text
 Out[3]: 'iris-setosa'
