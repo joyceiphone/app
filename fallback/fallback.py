@@ -3,7 +3,7 @@ from flask import Flask, request, Response
 app = Flask(__name__)
 
 
-@app.route('/get-result')
+@app.route('/fallback')
 def get_fallback():
     try:
         args = request.args
