@@ -1,5 +1,6 @@
 # Simple classification machine learning app. 
-Docker Hub Image is here - [Docker Image](https://hub.docker.com/r/joyceiphone/flask_docker)
+Docker Hub Image is here (Proper Service) - [Docker Image](https://hub.docker.com/r/joyceiphone/flask_docker)
+Docker Image for Fallback Service - [Docker Image](https://hub.docker.com/r/joyceiphone/fallback)
 
 ## Functions. Start training - `POST /train`
 The endpoint is only accepting `POST` requests.
@@ -28,4 +29,17 @@ Out[5]: 200
 
 In [6]:result.text
 Out[6]:'iris-setosa'
+```
+
+## Note
+You can get a simple `GET` result by running `GET` request if you are running fallback-service docker.
+
+### Example Call
+```python
+In [1]: import requests
+
+In [2]: result =requests.get("http://localhost:5000/get-result?petal_length=1")
+
+In [3]: result.text
+Out[3]: 'iris-setosa'
 ```
