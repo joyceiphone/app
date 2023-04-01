@@ -16,7 +16,6 @@ def get_result():
             return Response(response='iris-versicolor', status=200, mimetype='application/json')
     except:
         return Response(response="", status=201, mimetype='application/json')
-s
 
 if __name__ == '__main__':
     app.run("0.0.0.0")

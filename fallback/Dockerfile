@@ -11,7 +11,7 @@ RUN echo installing \
     && pip3 install -r requirements.txt \
     && mkdir -p ${ROOT_PATH}
 
-COPY app.py ${ROOT_PATH}
+COPY fallback.py ${ROOT_PATH}
 WORKDIR ${ROOT_PATH}
 
 EXPOSE 5000
