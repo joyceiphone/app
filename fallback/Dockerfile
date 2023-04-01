@@ -16,4 +16,4 @@ WORKDIR ${ROOT_PATH}
 
 EXPOSE 5000
 
-ENTRYPOINT ["python3", "app.py"]
+ENTRYPOINT ["python3", "fallback.py"]
